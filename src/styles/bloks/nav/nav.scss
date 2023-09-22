@@ -1,37 +1,80 @@
 .navbar {
   overflow: hidden;
   display: block;
-  //justify-content: space-between;
-  //align-items: center;
-  padding: 18px 20px;
+  color: $mainText;
+  padding: 40px 0px;
 }
 
 .menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 24px;
   cursor: pointer;
+  color: $mainText;
+}
 
-  &__item {
-    opacity: 0.8;
-    &:hover {
-      opacity: 1;
-      transition: 0.3s ease;
-    }
-  }
+.logo {
+  max-width: 200px;
+}
+
+.menu__block {
+  display: flex;
+  //flex-direction: row;
+  align-items: center;
+  gap: clamp(0.938rem, -0.063rem + 5vw, 4.375rem);
 }
 
 .menu__items {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  max-width: 250px;
-  width: 100%;
+  color: $mainText;
+  gap: clamp(1.563rem, 1.29rem + 1.36vw, 2.5rem);
+  flex-shrink: 2;
+  flex-basis: 570px;
+
   .menu__item {
     a {
       text-decoration: none;
-      color: black;
+      color: $mainText;
+      font-size: 16px;
+      font-weight: 500;
+      //margin-right: 40px;
+
+      &:hover {
+        color: $textHover;
+        transition: 0.5s ease;
+
+        &:after {
+          content: '';
+          display: block;
+          width: 49px;
+          height: 3px;
+          background: #1AA090;
+          transition: 0.5s ease;
+        }
+      }
+    }
+  }
+}
+
+.menu__btns {
+  display: flex;
+  font-size: 16px;
+  font-weight: 500;
+  flex-shrink: 1;
+
+  .menu__btn {
+    padding: 11px 29px;
+    margin: 5px;
+    background: transparent;
+    outline: none;
+    border: 1px solid $green;
+    color: $mainText;
+    white-space: nowrap;
+
+    &:hover,
+    :active {
+      background: $green;
+      transition: 0.5s ease;
     }
   }
 }
@@ -40,9 +83,11 @@
   .menu__item {
     display: none;
   }
+
   .logo {
     display: none;
   }
+
   .navbar {
     display: none;
     //justify-content: flex-end;
