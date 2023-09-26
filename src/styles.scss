@@ -20,6 +20,11 @@
   font-family: $fontMain;
   overflow: hidden;
   background: $mainBg;
+  box-sizing: border-box;
+
+  @media (max-width: $breakpoint1380) {
+    padding: 0 100px;
+  }
 
   @media (max-width: $breakpoint480) {
     padding: 5px;
