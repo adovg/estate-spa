@@ -15,21 +15,19 @@
             <img class="" src="./src/img/logo.svg" alt="Logo" />
           </div>
 
-          <div>
-            <div class="menu__block">
-              <ul class="menu__items">
-                <li class="menu__item"><a href="#">Home</a></li>
-                <li class="menu__item"><a href="#">About us</a></li>
-                <li class="menu__item"><a href="#">Buying</a></li>
-                <li class="menu__item"><a href="#">Renting</a></li>
-                <li class="menu__item"><a href="#">Selling</a></li>
-                <li class="menu__item"><a href="#">Contact us</a></li>
-              </ul>
+          <div class="menu__block">
+            <ul class="menu__items">
+              <li class="menu__item"><a href="#">Home</a></li>
+              <li class="menu__item"><a href="#">About us</a></li>
+              <li class="menu__item"><a href="#">Buying</a></li>
+              <li class="menu__item"><a href="#">Renting</a></li>
+              <li class="menu__item"><a href="#">Selling</a></li>
+              <li class="menu__item"><a href="#">Contact us</a></li>
+            </ul>
 
-              <div class="menu__btns">
-                <button class="menu__btn">Login</button>
-                <button class="menu__btn">Sign Up</button>
-              </div>
+            <div class="menu__btns">
+              <button class="menu__btn">Login</button>
+              <button class="menu__btn">Sign Up</button>
             </div>
           </div>
         </div>
@@ -44,8 +42,8 @@
       </div>
 
       <ul class="menu-mobile hidden">
-        <div class="logo-mobile">
-          <img src="./src/img/star.svg" alt="" />
+        <div class="logo-mobile logo">
+          <img class="" src="./src/img/logo.svg" alt="Logo" />
         </div>
 
         <li class="menu__item-mobile"><a href="#">Home</a></li>
@@ -57,7 +55,55 @@
       </ul>
 
       <section class="header wrapper section__wrapper">
-        <h1>My template</h1>
+        <div class="header__left">
+          <h1 class="header__title">
+            Perfect Way To Buy
+            <br />
+            And Sell A Home
+          </h1>
+          <p class="header__text">
+            Diam vitae, nec mattis lectus quam pretium amet facilisis. Urna,
+            massa aliqua dui pellentesque. Ac, gravida in eget non amet eget
+            purus non.
+          </p>
+        </div>
+        <div class="header__right">
+          <img
+            class="responsive__img"
+            src="./src/img/header_img.jpg"
+            alt="house"
+          />
+        </div>
+        <div class="filter header__filter">
+          <div class="filter__item">
+            <div class="filter__item-type">
+              <div class="item__type-name">Purpose</div>
+              <div class="item__type-icon">
+                <img src="./src/img/drop-arrow.svg" alt="arrow" />
+              </div>
+            </div>
+            <div class="filter__item__value">Buy</div>
+          </div>
+          <div class="filter__item">
+            <div class="filter__item-type">
+              <div class="item__type-name">Location</div>
+              <div class="item__type-icon">
+                <img src="./src/img/drop-arrow.svg" alt="arrow" />
+              </div>
+            </div>
+            <div class="filter__item__value">Toronto, Canada</div>
+          </div>
+          <div class="filter__item">
+            <div class="filter__item-type">
+              <div class="item__type-name">Type</div>
+              <div class="item__type-icon">
+                <img src="./src/img/drop-arrow.svg" alt="arrow" />
+              </div>
+            </div>
+            <div class="filter__item__value">Industrial home</div>
+          </div>
+          <button class="header__filter-btn">Search</button>
+        </div>
       </section>
 
       <footer class="footer">
