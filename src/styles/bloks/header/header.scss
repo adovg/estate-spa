@@ -4,8 +4,9 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    // margin-bottom: 180px;
+    margin-bottom: 180px;
     position: relative;
+    overflow: visible;
 }
 
 .filter {}
@@ -46,7 +47,7 @@
 
 .filter {
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr 1fr;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
     color: #000;
     position: absolute;
     // padding: 15px;
@@ -60,24 +61,90 @@
 
     &__item {
         padding: 28px 40px;
+        position: relative;
     }
 
     // .filter__item-type
 
     &__item-type {
         display: flex;
+        align-items: flex-end;
+    }
+
+    &__item-value {
+        color: $textBlack;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 126%;
+        text-transform: capitalize;
+        padding-right: 5px;
+    }
+
+    &__btn {
+        margin: 5px;
+        background: $green;
+        color: $textWhite;
+        outline: none;
+        border: none;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+
+        &:hover {
+            background: $greenHover;
+            transition: all 0.8s ease-out;
+        }
+    }
+
+}
+
+.item__dropdown {
+    display: none;
+    position: absolute;
+    z-index: 5;
+    //color: $textWhite;
+    //top: 15vh;
+    top: 105%;
+    left: 0;
+    right: 0;
+    background: $textWhite;
+    transition: all 0.2s;
+    box-shadow: 0 0 5px 1px #000;
+
+    &-active {
+        display: flex;
+        flex-direction: column;
     }
 }
+
+// .item__dropdown-active {
+//     display: flex;
+//     flex-direction: column;
+
+// }
 
 .item {
 
     // .item__type-name
 
-    &__type-name {}
+    &__type-name {
+        color: $textGrey;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
 
     // .item__type-icon
 
     &__type-icon {
         margin-left: 2px;
+        transition: transform 0.2s;
+
+        &-active {
+            transform: rotateX(180deg);
+        }
     }
 }
