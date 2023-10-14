@@ -11,9 +11,10 @@
 // }
 
 .container {
-  max-width: ($containerWidth + $containerPadding) + px;
+  //max-width: $containerWidth + px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 $containerSidePadding + px;
+  //padding: 0 $containerSidePadding + px;
   font-family: $fontMain;
   overflow: hidden;
   background: $mainBg;
@@ -22,12 +23,14 @@
     padding: 0 $containerSidePadding - 150px;
   }
 
-  @media (max-width: $breakpoint480) {
+  @media (max-width: $breakpoint992) {
     padding: 5px;
   }
 }
 
 .wrapper {
+  max-width: $containerWidth + px;
+  margin: 0 auto;
   // height: 100vh;
   //width: 100vh;
   overflow: hidden;
@@ -74,7 +77,7 @@
 .responsive__img {
   //max-width: 800px;
   width: 100%;
-  //height: auto;
+  height: auto;
 }
 
 @import "./styles/bloks/nav/hamburger-nav.scss";
