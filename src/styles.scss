@@ -19,13 +19,13 @@
   overflow: hidden;
   background: $mainBg;
 
-  @media (max-width: $breakpoint1380) {
-    padding: 0 $containerSidePadding - 150px;
-  }
+  // @media (max-width: $breakpoint1380) {
+  //   padding: 0 $containerSidePadding - 150px;
+  // }
 
-  @media (max-width: $breakpoint992) {
-    padding: 5px;
-  }
+  // @media (max-width: $breakpoint992) {
+  //   padding: 5px;
+  // }
 }
 
 .wrapper {
@@ -84,3 +84,4 @@
 @import "./styles/bloks/nav/nav.scss";
 @import "./styles/bloks/header/header.scss";
 @import "./styles/bloks/footer/footer.scss";
+@import "./styles/bloks/companies/companies.scss";

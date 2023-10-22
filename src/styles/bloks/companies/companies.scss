@@ -1,0 +1,34 @@
+.companies {
+    padding-bottom: 180px;
+    margin: 0 auto;
+    // .companies__title
+
+    &__title {
+        color: $textWhite;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 126%;
+        /* 60.48px */
+        text-transform: capitalize;
+        margin-bottom: 50px;
+    }
+}
+
+.companie {
+
+
+    // .companie__logo
+
+    &__logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    // .companie__logo-item
+
+    &__logo-item {
+        margin: 5px;
+    }
+}
