@@ -1,9 +1,10 @@
 import '../src/styles.scss';
+import Swiper from './swiper.js';
 
 
 
 window.onload = () => {
-  console.log('hello world')
+  console.log('done loading')
   const burgerBtn = document.querySelector(".burger__btn");
   const menuMobile = document.querySelector(".menu-mobile");
 
@@ -26,7 +27,6 @@ window.onload = () => {
 
  if (filter) {
   const items = filter.querySelectorAll('.filter__item')
-  console.log(items);
   items.forEach(item => {
     item.addEventListener("click", event => {
         console.log('clicked');
@@ -38,5 +38,23 @@ window.onload = () => {
     })
   })
  }
+
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+
+});
+
+
  
 };

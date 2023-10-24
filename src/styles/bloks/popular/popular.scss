@@ -1,0 +1,16 @@
+.popular {
+    padding: clamp(1.875rem, -0.489rem + 11.82vw, 10rem);
+    color: $textWhite;
+    margin-bottom: 100px;
+    background: #1a242f url('./src/img/Mask-popular.png') center center/cover no-repeat;
+}
+
+.popular__title {
+    color: $textWhite;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 126%;
+    /* 60.48px */
+    text-transform: capitalize;
+}
