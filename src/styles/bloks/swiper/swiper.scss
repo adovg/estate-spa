@@ -1,14 +1,20 @@
 .swiper {
-    width: 600px;
-    height: 300px;
+    // width: 600px;
+    // height: 300px;
 
 }
 
 .swiper {}
 
-.swiper-wrapper {}
+.swiper-wrapper {
+    display: inline-flex;
+    //display: flex;
 
-.swiper-slide {}
+}
+
+.swiper-slide {
+    //margin-right: 20px;
+}
 
 .swiper-button-prev {}
 

@@ -42,16 +42,32 @@ window.onload = () => {
 
 const swiper = new Swiper('.swiper', {
   // Optional parameters
-  direction: 'horizontal',
-  loop: true,
-
+  // direction: 'horizontal',
+  loop: false,
+  spaceBetween: 10,
+  slidesPerView: 1,
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-
-  // And if we need scrollbar
+breakpoints: {
+    //when window width is >= 320px
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 10
+    },
+    // when window width is >= 660px
+    660: {
+      slidesPerView: 2,
+      spaceBetween: 10
+    },
+    // when window width is >= 992px
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 40
+    }
+  }
 
 });
 

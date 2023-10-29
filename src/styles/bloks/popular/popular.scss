@@ -1,11 +1,12 @@
 .popular {
-    padding: clamp(1.875rem, -0.489rem + 11.82vw, 10rem);
+    padding: clamp(1.875rem, -0.489rem + 11.82vw, 10rem) 0;
     color: $textWhite;
     margin-bottom: 100px;
     background: #1a242f url('./src/img/Mask-popular.png') center center/cover no-repeat;
 }
 
 .popular__title {
+    margin-bottom: 40px;
     color: $textWhite;
     font-size: 48px;
     font-style: normal;
@@ -13,4 +14,115 @@
     line-height: 126%;
     /* 60.48px */
     text-transform: capitalize;
+}
+
+.popular__slider {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    //max-width: 460px;
+}
+
+.swiper-slide {}
+
+.popular {
+    position: relative;
+    // .popular__slider
+
+    &__slider {
+        @media (max-width: 649px) {
+            align-items: center;
+        }
+    }
+}
+
+.slider {
+
+    // .slider__image
+
+    &__image {
+        img {
+            max-width: 100%;
+        }
+    }
+
+    // .slider__content
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    // .slider__title
+
+    &__title {
+        color: #FFF;
+        font-family: Work Sans;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 126%;
+        letter-spacing: 0.26px;
+        text-transform: capitalize;
+    }
+
+    // .slider__description
+
+    &__description {
+        color: $mainText;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 170%;
+    }
+
+    // .slider__label
+
+    &__label {
+        margin-top: 27px;
+        display: flex;
+        gap: 20px;
+    }
+
+    // .slider__label-item
+
+    &__label-item {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+}
+
+.wrapper {
+    position: relative;
+}
+
+.popular__slider__btn {
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    border: 1px solid #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.swiper__buttons__wrap {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    position: absolute;
+    // padding-top: 100px;
+    width: 93vw;
+    top: 44%;
+    left: 0;
+    right: 0;
+    z-index: 5;
+
+    @media (max-width: $breakpoint1200) {
+        top: 14%;
+        justify-content: flex-end;
+        gap: 15px;
+    }
 }
