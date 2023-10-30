@@ -49,6 +49,15 @@
   }
 }
 
+.section__title {
+  color: $textWhite;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 126%;
+  text-transform: capitalize;
+}
+
 // .section__wrapper {
 //   padding-left: 10px;
 //   padding-right: 10px;
@@ -87,3 +96,4 @@
 @import "./styles/bloks/companies/companies.scss";
 @import "./styles/bloks/popular/popular.scss";
 @import "./styles/bloks/swiper/swiper.scss";
+@import "./styles/bloks/advantages/advantages.scss";
