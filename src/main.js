@@ -40,7 +40,7 @@ window.onload = () => {
  }
 
 
-const swiper = new Swiper('.swiper', {
+const popularSwiper = new Swiper('.swiper', {
   // Optional parameters
   // direction: 'horizontal',
   loop: false,
@@ -71,6 +71,37 @@ breakpoints: {
 
 });
 
+const reviewsSwiper = new Swiper('.swiper__reviews', {
+  // Optional parameters
+  // direction: 'horizontal',
+  loop: false,
+  spaceBetween: 10,
+  slidesPerView: 1,
+  autoHeight: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+breakpoints: {
+    //when window width is >= 320px
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 10
+    },
+    // when window width is >= 660px
+    660: {
+      slidesPerView: 1,
+      spaceBetween: 10
+    },
+    // when window width is >= 992px
+    992: {
+      slidesPerView: 1,
+      spaceBetween: 40
+    }
+  }
+
+});
 
  
 };

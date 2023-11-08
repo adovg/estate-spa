@@ -1,0 +1,55 @@
+.gallery {
+    position: relative;
+    margin-top: 160px;
+    margin-bottom: 160px;
+
+    .gallery__wrapper {
+        color: $textWhite;
+        display: flex;
+        align-items: center;
+        gap: 60px;
+
+        .gallery__images {
+            display: flex;
+
+            gap: 20px;
+
+            .gallery__img {}
+        }
+
+        .gallery__about {
+            .gallery__title {}
+
+            .gallery__text {
+                margin-top: 22px;
+                color: $mainText;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 170%;
+                /* 30.6px */
+            }
+
+            .gallery__btn {
+                margin-top: 22px;
+                background: $green;
+                border: none;
+                padding: 22px 44px;
+                color: $textWhite;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                text-transform: capitalize;
+            }
+        }
+
+
+    }
+
+    .gallery__wrapper__overlay {
+        position: absolute;
+        right: 0;
+    }
+
+}

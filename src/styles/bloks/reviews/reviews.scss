@@ -1,0 +1,116 @@
+    .swiper-wrapper {
+        align-items: flex-start;
+    }
+
+
+    .reviews {
+
+        color: $textWhite;
+
+
+
+        &__quotes {
+            max-width: 1000px;
+            margin: auto;
+
+            img {
+                max-width: 178px;
+                max-height: 188px;
+            }
+
+        }
+
+        &__content {
+            position: relative;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        // .reviews__text
+
+        &__text {
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 157%;
+            text-transform: capitalize;
+            margin-bottom: 40px;
+        }
+
+        // .reviews__userName
+
+        &__userName {
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 126%;
+            letter-spacing: 0.22px;
+            text-transform: capitalize;
+        }
+
+        // .reviews__userPosition
+
+        &__userPosition {
+            color: $mainText;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 170%;
+        }
+    }
+
+    .reviews__button {
+        position: absolute;
+        bottom: 0;
+        right: 15vw;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        z-index: 10;
+        color: #767F89;
+
+
+        // .swiper-button__reviews {
+        //     svg {
+        //         // background-color: red;
+        //         height: 38px;
+        //         fill: #fff;
+        //     }
+
+        // }
+
+        .swiper-button__reviews>svg {
+            height: 38px;
+            fill: #fff;
+
+            &:hover {
+                fill: #767F89;
+            }
+
+        }
+
+        .reviews__button-line {
+            width: 1px;
+            height: 61px;
+            background: #353F49;
+        }
+
+        div {
+            //position: relative;
+            // z-index: 10;
+        }
+    }
+
+    .reviews__content {
+
+
+        .reviews__text {}
+    }
+
+
+    .reviews {
+
+        // .reviews__content
+
+
+    }

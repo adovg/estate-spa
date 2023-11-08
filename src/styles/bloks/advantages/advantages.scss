@@ -1,7 +1,12 @@
 .advantages {
-    // background: #121B25;
+    position: relative;
     // .advantages__wrapper
     padding-top: 180px;
+    margin-bottom: 95px;
+
+    @media (max-width: $breakpoint992) {
+        padding-top: 80px;
+    }
 
     &__wrapper {}
 
@@ -17,6 +22,11 @@
     &__row {
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: $breakpoint992) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 
     // .advantages__item
@@ -65,7 +75,14 @@
 
     // .advantages__reviews
 
-    &__reviews {}
+    &__figure {
+        position: absolute;
+        z-index: 5;
+        top: 50%;
+        left: 0%;
+    }
+
+
 }
 
 .wrapper {}

@@ -1,3 +1,7 @@
+.header {
+    position: relative;
+}
+
 .header__content {
     color: $textWhite;
     display: flex;
@@ -5,7 +9,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 180px;
-    position: relative;
+    //position: relative;
     overflow: visible;
 
     @media (max-width: $breakpoint1024) {
