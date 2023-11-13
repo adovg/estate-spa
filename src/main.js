@@ -72,8 +72,6 @@ breakpoints: {
 });
 
 const reviewsSwiper = new Swiper('.swiper__reviews', {
-  // Optional parameters
-  // direction: 'horizontal',
   loop: false,
   spaceBetween: 10,
   slidesPerView: 1,
@@ -103,5 +101,19 @@ breakpoints: {
 
 });
 
+
+const galleryItems = document.querySelectorAll(".gallery__item");
+
+if (galleryItems.length > 0) {
+	galleryItems.forEach(item => {
+		new Swiper(item, {
+			slidesPerView: 1, 
+			autoplay: {
+				delay: 5000,
+			},
+			effect: 'fade',
+		})
+	})
+}
  
 };

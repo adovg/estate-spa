@@ -10,6 +10,13 @@
 //   font-style: normal;
 // }
 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .container {
   //max-width: $containerWidth + px;
   width: 100%;
@@ -87,6 +94,15 @@
   //max-width: 800px;
   width: 100%;
   height: auto;
+}
+
+img {
+  // max-width: 100%;
+  //height: 100%;
+}
+
+.swiper {
+  overflow: hidden;
 }
 
 @import "./styles/bloks/nav/hamburger-nav.scss";
