@@ -8,7 +8,7 @@
         display: flex;
         align-items: center;
         gap: 60px;
-        // +++
+
 
 
         .gallery__about {
@@ -52,12 +52,13 @@
     display: flex;
     gap: 20px;
     align-items: center;
+    justify-content: space-between;
+    width: 50.7042253521%;
 
     .gallery__item {
-        width: 350px;
-        //flex: 0 0 47%;
+       //width: 350px;
+        flex: 0 0 47%;
         aspect-ratio: 7/11;
-
 
         .swiper-wrapper {
             position: relative;
@@ -65,10 +66,13 @@
         }
 
         img {
-            max-width: 100%;
-            height: 100%;
+            display: flex;
+            
+    
+             width: 100%;
+             height: 100%;
+             height: 550px;
             object-fit: cover;
-
         }
     }
 
