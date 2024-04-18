@@ -60,7 +60,8 @@
 
 .section__title {
   color: $textWhite;
-  font-size: 48px;
+  // font-size: 48px;
+  font-size: clamp(1.875rem, 1.3005rem + 1.9149vw, 3rem);
   font-style: normal;
   font-weight: 600;
   line-height: 126%;

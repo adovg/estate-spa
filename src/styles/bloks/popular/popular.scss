@@ -50,13 +50,17 @@
     &__content {
         display: flex;
         flex-direction: column;
+
+        @media (max-width: $breakpoint768) {
+            padding-top: 75px;
+        }
     }
 
     // .slider__title
 
     &__title {
         color: #FFF;
-        font-family: Work Sans;
+        font-family: "Work Sans";
         font-size: 26px;
         font-style: normal;
         font-weight: 600;
@@ -115,14 +119,21 @@
     position: absolute;
     // padding-top: 100px;
     width: 93vw;
-    top: 44%;
+    top: 36%;
     left: 0;
     right: 0;
     z-index: 5;
 
     @media (max-width: $breakpoint1200) {
-        top: 14%;
+        top: 10%;
         justify-content: flex-end;
+        gap: 15px;
+    }
+
+
+    @media (max-width: 658px) {
+        top: 52%;
+        justify-content: space-between;
         gap: 15px;
     }
 }
@@ -152,3 +163,6 @@
         transition: all 0.8s ease-out;
     }
 }
+
+
+@media (max-width: $breakpoint768) {}

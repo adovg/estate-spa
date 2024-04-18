@@ -6,6 +6,11 @@
     &__title {
         margin-bottom: 50px;
     }
+
+
+    @media (max-width: $breakpoint768) {
+        margin-bottom: 65px;
+    }
 }
 
 .companie {
@@ -16,13 +21,45 @@
     &__logo {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
+        gap: 15px;
     }
 
     // .companie__logo-item
 
     &__logo-item {
         margin: 5px;
+
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+@media (max-width: $breakpoint992) {
+
+    .companies {
+        padding-bottom: 120px;
+    }
+
+    .companies__title {
+        text-align: center;
+    }
+}
+
+@media (max-width: $breakpoint768) {
+
+    .companies {
+        padding-bottom: 60px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: $breakpoint480) {
+    .companie__logo {
+        flex-direction: column;
+        align-items: center;
     }
 }
