@@ -4,7 +4,6 @@ import Swiper from './swiper.js';
 
 
 window.onload = () => {
-  console.log('done loading')
   const burgerBtn = document.querySelector(".burger__btn");
   const menuMobile = document.querySelector(".menu-mobile");
 
@@ -100,24 +99,6 @@ breakpoints: {
   }
 
 });
-
-
-// const galleryItems = document.querySelectorAll(".gallery__item");
-
-// if (galleryItems.length > 0) {
-// 	galleryItems.forEach(item => {
-// 		new Swiper(item, {
-// 			slidesPerView: 1, 
-//       autoHeight: false,
-// 			autoplay: {
-// 				delay: 5000,
-// 			},
-// 			effect: 'fade',
-// 		})
-// 	})
-// }
- 
-
 
 const galleryItems = new Swiper('.gallery__item', {
   loop: true,
