@@ -12,7 +12,6 @@
     font-style: normal;
     font-weight: 600;
     line-height: 126%;
-    /* 60.48px */
     text-transform: capitalize;
 }
 
@@ -20,7 +19,6 @@
     display: flex;
     flex-direction: column;
     gap: 27px;
-    //max-width: 460px;
 }
 
 
@@ -117,7 +115,6 @@
     margin: auto;
     justify-content: space-between;
     position: absolute;
-    // padding-top: 100px;
     width: 93vw;
     top: 36%;
     left: 0;
@@ -163,6 +160,3 @@
         transition: all 0.8s ease-out;
     }
 }
-
-
-@media (max-width: $breakpoint768) {}

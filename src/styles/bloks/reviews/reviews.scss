@@ -4,10 +4,7 @@
 
 
     .reviews {
-
         color: $textWhite;
-
-
 
         &__quotes {
             max-width: 1000px;
@@ -36,6 +33,14 @@
             line-height: 157%;
             text-transform: capitalize;
             margin-bottom: 40px;
+
+            @media (max-width: $breakpoint768) {
+                font-size: 28px;
+            }
+
+            @media (max-width: $breakpoint480) {
+                font-size: 24px;
+            }
         }
 
         // .reviews__userName
@@ -70,16 +75,6 @@
         z-index: 10;
         color: #767F89;
 
-
-        // .swiper-button__reviews {
-        //     svg {
-        //         // background-color: red;
-        //         height: 38px;
-        //         fill: #fff;
-        //     }
-
-        // }
-
         .swiper-button__reviews>svg {
             height: 38px;
             fill: #fff;
@@ -95,23 +90,4 @@
             height: 61px;
             background: #353F49;
         }
-
-        div {
-            //position: relative;
-            // z-index: 10;
-        }
-    }
-
-    .reviews__content {
-
-
-        .reviews__text {}
-    }
-
-
-    .reviews {
-
-        // .reviews__content
-
-
     }
