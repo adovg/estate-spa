@@ -4,10 +4,26 @@
     padding-bottom: 180px;
     // .begin__wrapper
 
+    @media (max-width: $breakpoint992) {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    @media (max-width: $breakpoint768) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
     &__wrapper {
         display: flex;
         gap: 88px;
         justify-content: space-around;
+
+        @media (max-width: $breakpoint768) {
+            flex-direction: column;
+            align-items: center;
+            gap: 45px;
+        }
     }
 
     // .begin__title
@@ -20,6 +36,10 @@
         display: flex;
         flex-direction: column;
         max-width: 637px;
+
+        @media (max-width: $breakpoint768) {
+            align-items: center;
+        }
     }
 
     // .begin__text
