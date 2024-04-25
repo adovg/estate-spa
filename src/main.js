@@ -5,12 +5,12 @@ import Swiper from './swiper.js';
   let preloader__container = document.querySelector('.preloader__container');
 
   window.addEventListener('load',  () => {
+
+  preloader.classList.add('hide')
+  setTimeout( () => {
     preloader.remove();
     preloader__container.remove();
-  //preloader.classList.add('hide')
-  // setTimeout( () => {
-  //   preloader.remove();
-  // }, 600)
+  }, 600)
 })
 
 window.onload = () => {
