@@ -1,11 +1,23 @@
 import '../src/styles.scss';
 import Swiper from './swiper.js';
 
+  let preloader = document.querySelector('.preloader');
+  let preloader__container = document.querySelector('.preloader__container');
 
+  window.addEventListener('load',  () => {
+    preloader.remove();
+    preloader__container.remove();
+  //preloader.classList.add('hide')
+  // setTimeout( () => {
+  //   preloader.remove();
+  // }, 600)
+})
 
 window.onload = () => {
   const burgerBtn = document.querySelector(".burger__btn");
   const menuMobile = document.querySelector(".menu-mobile");
+
+
 
   burgerBtn.onclick = function () {
     burgerBtn.classList.toggle("active");
