@@ -17,6 +17,8 @@ window.onload = () => {
   const burgerBtn = document.querySelector(".burger__btn");
   const menuMobile = document.querySelector(".menu-mobile");
 
+
+
   burgerBtn.onclick = function () {
     burgerBtn.classList.toggle("active");
     hideMenu();
