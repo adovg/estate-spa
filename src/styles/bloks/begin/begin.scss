@@ -2,7 +2,7 @@
     background-color: #121B25;
     padding-top: 180px;
     padding-bottom: 180px;
-    // .begin__wrapper
+  
 
     @media (max-width: $breakpoint992) {
         padding-top: 120px;
@@ -54,9 +54,9 @@
         margin-top: 16px;
         display: flex;
         max-width: 230px;
-        // max-height: 72px;
         background-color: $green;
         border: none;
+        cursor: pointer;
 
         p {
             padding: 22px 42px;

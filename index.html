@@ -82,7 +82,7 @@
           <img class="" src="./src/img/logo.svg" alt="Logo" />
         </div>
 
-        <li class="menu__item-mobile"><a href="#">Home</a></li>
+        <li class="menu__item-mobile"><a href="#home">Home</a></li>
         <li class="menu__item-mobile"><a href="#">About us</a></li>
         <li class="menu__item-mobile"><a href="#">Buying</a></li>
         <li class="menu__item-mobile"><a href="#">Renting</a></li>
@@ -90,7 +90,7 @@
         <li class="menu__item-mobile"><a href="#">Contact us</a></li>
       </ul>
 
-      <section class="header">
+      <section class="header" id="home">
         <div class="wrapper header__wrapper">
           <div class="header__content">
             <div class="header__left">
@@ -584,6 +584,31 @@
           </div>
         </div>
       </section>
+
+      <!-- Modal Call to Action -->
+      <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+          <button class="modal__close" id="modalClose">&times;</button>
+          <div class="modal__content">
+            <h3 class="modal__title">Get in Touch</h3>
+            <p class="modal__description">
+              Fill out the form below and we'll get back to you shortly.
+            </p>
+            <form class="modal__form" id="modalForm">
+              <div class="modal__form-row">
+                <input type="text" class="modal__input" name="firstName" placeholder="First Name *" required />
+                <input type="text" class="modal__input" name="lastName" placeholder="Last Name *" required />
+              </div>
+              <input type="email" class="modal__input" name="email" placeholder="Email *" required />
+              <textarea class="modal__textarea" name="question" placeholder="Your question (optional)"></textarea>
+              <div class="modal__buttons">
+                <button type="submit" class="modal__btn modal__btn--submit">Send</button>
+                <button type="button" class="modal__btn modal__btn--close" id="modalCloseBtn">Close</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
 
       <footer class="footer">
         <div class="wrapper footer__wrapper">
