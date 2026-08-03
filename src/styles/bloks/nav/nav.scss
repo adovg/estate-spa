@@ -1,16 +1,18 @@
 .navbar {
-  overflow: hidden;
   display: block;
-  color: $mainText;
-  padding: 40px 0px;
-  margin-bottom: 95px;
-  
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: 1000;
+  color: $mainText;
+  padding: 20px 0;
+  overflow: visible;
+  background-color: $mainBg;
 }
 
 .menu {
   display: flex;
-  position: sticky;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
