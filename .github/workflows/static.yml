@@ -10,7 +10,7 @@ jobs:
       - name: Install and Build
         run: |
           npm ci
-          npm run build # Здесь создается ваша папка, например dist
+          npm run build 
       - uses: actions/upload-pages-artifact@v3
         with:
           path: './dist' 
