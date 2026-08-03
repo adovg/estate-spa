@@ -1,0 +1,17 @@
+name: Deploy to GitHub Pages
+on:
+  push:
+    branches: [ main ]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install and Build
+        run: |
+          npm ci
+          npm run build # Здесь создается ваша папка, например dist
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist' 
+      - uses: deploy-pages@v4
